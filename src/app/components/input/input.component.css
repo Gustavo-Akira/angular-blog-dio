@@ -1,0 +1,35 @@
+:host{
+    display: block;
+    margin-bottom: 1em;
+}
+
+
+.field input{
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #ddd;
+  border: 2px solid var(#eee);
+  border-radius: 4px;
+  color: black;
+  max-width: fit-content;
+}
+
+input:not(textarea) {
+    line-height: 1;
+    height: 2.25rem;
+}
+
+.field{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label{
+  align-self: flex-start;
+}
+
+ 

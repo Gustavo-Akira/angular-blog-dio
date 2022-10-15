@@ -1,0 +1,8 @@
+<form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+    <app-input [controle]="dataForm.controls.title" input="text" label="titulo"></app-input>
+    <app-input [controle]="dataForm.controls.description" input="text" label="descrição"></app-input>
+    <app-input [controle]="dataForm.controls.photoCover" input="text" label="Foto"></app-input>
+    <button [disabled]="dataForm.invalid">
+        Registrar
+    </button>
+</form>

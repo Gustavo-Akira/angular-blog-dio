@@ -10,8 +10,8 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:'content/:id',
-    component:ContentComponent
+    path:'content',
+    loadChildren: ()=>import('./pages/content/content.module').then(m=> m.ContentModule),
   }
 ];
 

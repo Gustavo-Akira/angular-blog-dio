@@ -26,7 +26,7 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id:string | null){
-    const result = dataFake.filter(article => article.id == id)[0]
+    const result = dataFake.filter(article => article.id == Number.parseInt(id!))[0]
 
     this.contentTitle = result.title
     this.contentDescription = result.description
